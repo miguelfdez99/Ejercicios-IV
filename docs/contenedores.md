@@ -51,6 +51,7 @@ Primero ejecutamos la imagen de CentOs con:
 $ docker run -it centos:centos7
 ~~~
 Ahora creamos un nuevo usuario:
+
 ![](./img/aniadirUsusario.png)
 
 Instalamos nginx en la imagen de centos con los siguientes comandos:
