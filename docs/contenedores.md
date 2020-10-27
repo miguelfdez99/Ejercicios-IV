@@ -10,7 +10,7 @@ $ apt-cache madison docker-ce
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ~~~ 
 
-![](docker.png)
+![](./img/helloWorld.png)
 
 Para instalar podman he seguido los siguientes [pasos](https://computingforgeeks.com/how-to-install-podman-on-ubuntu/):
 ~~~
@@ -20,4 +20,46 @@ $ curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers
 $ sudo apt update
 $ sudo apt -y install podman
 ~~~
+
+![](./img/podman.png)
+
+## Ejercicios 2:
+### 1: Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.  
+
+Para esto usamos el siguiente comando:
+
+~~~
+$ docker pull centos
+~~~
+
+### 2: Buscar e instalar una imagen que incluya MongoDB.
+
+Instalamos MongoBD con:
+
+~~~
+$ docker pull mongo
+~~~
+
+![](./img/mongo.png)
+
+![](./img/images.png)
+
+## Ejercicio 3: Crear un usuario propio e instalar alguna aplicación tal como nginx en el contenedor creado de esta forma, usando las órdenes propias del sistema operativo con el que se haya inicializado el contenedor.
+
+Primero ejecutamos la imagen de CentOs con:
+~~~
+$ docker run -it centos:centos7
+~~~
+Ahora creamos un nuevo usuario:
+![](./img/aniadirUsuario.png
+)
+Instalamos nginx en la imagen de centos con los siguientes comandos:
+
+~~~
+$ sudo yum install epel-release
+$ sudo yum install nginx
+~~~
+
+![](./img/nginx)
+
 
