@@ -51,7 +51,7 @@ Primero ejecutamos la imagen de CentOs con:
 $ docker run -it centos:centos7
 ~~~
 Ahora creamos un nuevo usuario:
-![](./img/aniadirUsuario.png)
+![](./img/aniadirUsusario.png)
 
 Instalamos nginx en la imagen de centos con los siguientes comandos:
 
@@ -60,6 +60,6 @@ $ sudo yum install epel-release
 $ sudo yum install nginx
 ~~~
 
-![](./img/nginx)
+![](./img/nginx.png)
 
 
