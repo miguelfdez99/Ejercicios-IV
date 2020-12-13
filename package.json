@@ -1,0 +1,33 @@
+{
+  "name": "ejercicios-iv",
+  "version": "1.0.0",
+  "description": "Ejercicios de la asignatura Infraestructura Virtual",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "pm2 start ejercicio2.js -i 4",
+    "stop": "pm2 stop all"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {
+    "etcd3": "^1.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelfdez99/Ejercicios-IV.git"
+  },
+  "author": "Miguel Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miguelfdez99/Ejercicios-IV/issues"
+  },
+  "homepage": "https://github.com/miguelfdez99/Ejercicios-IV#readme"
+}
